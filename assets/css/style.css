@@ -8,12 +8,31 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+a:visited {
+  color: rgb(145, 145, 145);
+}
+
+ul li {
+  list-style: none;
+}
+
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
 header .logo-top {
   background-color: #255EE9;
   /* CANCELLA L'ALTEZZA E BORDER */
   height: 50px; 
   border: 1px solid black;
 }
+
+/* .button {
+  padding: 5px 10px;
+  border-radius: 10px; */
+
 
 .container {
   width: 100%;
@@ -25,6 +44,11 @@ header .logo-top {
   display: flex;
   justify-content: center;
 }
+
+.flex-column {
+
+}
+
 
 
 
@@ -49,8 +73,19 @@ main .main-top p {
   line-height: 2;
 }
 
+main .main-top .download {
+  justify-content: space-around;
+}
+
+.main-top ul li {
+  padding-top: 10px;
+  width: 100%;
+}
+
 .info-section {
   padding-top: 100px;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 .info-box {
