@@ -107,8 +107,8 @@ main .main-top .download {
 }
 
 .info-box .special {
-  flex-grow: 3;
   flex-direction: column-reverse;
+  align-items: center;
 }
 
 .main-center .info-box:nth-child(even) .info-section {
