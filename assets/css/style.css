@@ -23,7 +23,10 @@ header .logo-top {
 
 .flexbox {
   display: flex;
+  justify-content: center;
 }
+
+
 
 
 /* MAIN */
@@ -44,4 +47,25 @@ main .main-top h1 {
 
 main .main-top p {
   line-height: 2;
+}
+
+.info-section {
+  padding-top: 100px;
+}
+
+.info-box {
+  width: 100%;
+  height: 400px;
+  background-color: cyan;
+  border: 1px solid black;
+}
+
+.info-box .img-box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.info-box .text-box {
+  padding-left: 50px;
 }
