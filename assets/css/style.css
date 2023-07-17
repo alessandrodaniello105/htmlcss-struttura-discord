@@ -33,6 +33,9 @@ header .logo-top {
   padding: 5px 10px;
   border-radius: 10px; */
 
+.debug {
+  border: 1px solid black;
+}
 
 .container {
   width: 100%;
@@ -44,12 +47,6 @@ header .logo-top {
   display: flex;
   justify-content: center;
 }
-
-.flex-column {
-
-}
-
-
 
 
 
@@ -82,17 +79,17 @@ main .main-top .download {
   width: 100%;
 }
 
-.info-section {
-  padding-top: 100px;
-  flex-direction: column-reverse;
-  align-items: center;
-}
-
 .info-box {
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   background-color: cyan;
   border: 1px solid black;
+  /* flex-grow: 1; */
+}
+
+.info-section {
+  padding-top: 100px;
+  align-items: center;
 }
 
 .info-box .img-box {
@@ -103,4 +100,17 @@ main .main-top .download {
 
 .info-box .text-box {
   padding-left: 50px;
+}
+
+.main-center {
+  flex-direction: column;
+}
+
+.info-box .special {
+  flex-grow: 3;
+  flex-direction: column-reverse;
+}
+
+.main-center .info-box:nth-child(even) .info-section {
+  flex-direction: row-reverse;
 }
